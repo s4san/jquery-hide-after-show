@@ -11,6 +11,6 @@
 			$hide = $(hide);
 			$(document).one('click', '*:not(' + hide + ')', $hide.hide.bind($hide));
 		}
-		return $.fn.show.call(this);
+		return $nativeShow.call(this);
 	};
 }(jQuery);
