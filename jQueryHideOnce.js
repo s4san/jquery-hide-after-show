@@ -9,7 +9,7 @@
 		var $hide;
 		if(typeof hide === 'string') {
 			$hide = $(hide);
-			$(document).one('click', '*:not(' + hide + ')', $hide.hide.bind($hide));
+			$(document).one('click', '*:not(' + hide + ')', $.fn.hide.bind($hide));
 		}
 		return $nativeShow.call(this);
 	};
